@@ -61,7 +61,7 @@ fn expand_msg(sev: Severity,
                         accumulator.push_str(s.get());
                     }
                     ast::LitChar(c) => {
-                        accumulator.push(c);
+                        accumulator.push_char(c);
                     }
                     ast::LitInt(i, ast::UnsignedIntLit(_)) |
                     ast::LitInt(i, ast::SignedIntLit(_, ast::Plus)) |
